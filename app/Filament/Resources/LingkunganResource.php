@@ -105,7 +105,7 @@ class LingkunganResource extends Resource
         return Gate::allows('create_lingkungan');
     }
 
-    //
+    //menonaktifkan edit 
 
     public static function canEdit(\Illuminate\Database\Eloquent\Model $record): bool
     {

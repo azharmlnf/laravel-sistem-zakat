@@ -37,9 +37,11 @@ class UserResource extends Resource
                     ->password()
                     ->required()
                     ->maxLength(255),
-                Forms\Components\Select::make('roles')
+                    Forms\Components\Select::make('roles')
                     ->relationship('roles', 'name')
-                    ->preload(),
+                    ->preload()
+                    ->default(3), // Mengatur default value berdasarkan ID role
+                
             ]);
     }
 
