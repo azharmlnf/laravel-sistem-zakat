@@ -42,7 +42,8 @@ class JenisZakatResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('nama')
                     ->searchable(),
-                Tables\Columns\TextColumn::make('satuan'),
+                Tables\Columns\TextColumn::make('satuan')
+                ->searchable(),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()

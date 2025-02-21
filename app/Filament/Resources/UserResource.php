@@ -19,7 +19,7 @@ class UserResource extends Resource
 {
     protected static ?string $model = User::class;
     //ganti nama model di navigasi/form/tabel
-    protected static ?string $modelLabel = 'User(Amil)';
+    protected static ?string $modelLabel = 'User (Amil)';
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
     public static function form(Form $form): Form
