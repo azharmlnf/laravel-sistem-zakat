@@ -109,6 +109,7 @@ class UserResource extends Resource
         return Gate::allows('create_user');
     }
     
+    //mencegah akses langsung lewat url
     public static function canEdit(\Illuminate\Database\Eloquent\Model $record): bool
     {
         return Gate::allows('update_user');
